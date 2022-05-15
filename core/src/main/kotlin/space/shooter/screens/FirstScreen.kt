@@ -23,7 +23,7 @@ class FirstScreen(game: SpaceShooterGame) : GameScreen(game) {
     private val playerTex = Texture(Gdx.files.internal("assets/player_ship/Player_ship_16.png"))
     private val player = engine.entity {
         with<TransformComponent> {
-            position.set(6f, 1f, 0f)
+            position.set(10f, 1f, 0f)
         }
         with<GraphicsComponent> {
             sprite.run {

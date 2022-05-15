@@ -17,14 +17,16 @@ import space.shooter.screens.SecondScreen
 private val LOG = logger<SpaceShooterGame>()
 const val V_WIDTH = 20f
 const val V_HEIGHT = 15f
-const val UNIT_SCALE = 1 / 8f
+const val UNIT_SCALE = 1 / 16f
 
 class SpaceShooterGame : KtxGame<KtxScreen>() {
-    // `by lazy` init this to Batch only when it's called
-    // smart way to skip calling it inside create
+    // `by lazy` initialize Batch only when it's called
+    // smart way to avoid calling it inside create
     val batch: Batch by lazy { SpriteBatch() }
     val viewport = FitViewport(V_WIDTH, V_HEIGHT)
     val engine: Engine by lazy {
+        // Tip: `apply` is passes all needed args to function without calling
+        // `run` will actually run it right away
        PooledEngine().apply {
             addSystem(RenderSystem(batch, viewport))
        }

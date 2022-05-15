@@ -10,7 +10,7 @@ import space.shooter.SpaceShooterGame
 fun main() {
     Lwjgl3Application(SpaceShooterGame(), Lwjgl3ApplicationConfiguration().apply {
         setTitle("SpaceShooter")
-        setWindowedMode(640, 480)
+        setWindowedMode(20*32, 15*32)
         setWindowIcon(*(arrayOf(128, 64, 32, 16).map { "libgdx$it.png" }.toTypedArray()))
     })
 }
