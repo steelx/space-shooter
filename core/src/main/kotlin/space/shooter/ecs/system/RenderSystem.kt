@@ -3,6 +3,7 @@ package space.shooter.ecs.system
 import com.badlogic.ashley.core.Entity
 import com.badlogic.ashley.systems.SortedIteratingSystem
 import com.badlogic.gdx.graphics.g2d.Batch
+import com.badlogic.gdx.utils.GdxRuntimeException
 import com.badlogic.gdx.utils.viewport.Viewport
 import space.shooter.ecs.components.GraphicsComponent
 import space.shooter.ecs.components.TransformComponent
@@ -19,7 +20,7 @@ class RenderSystem(private val batch: Batch, private val gameViewport: Viewport)
 ) {
 
     override fun update(deltaTime: Float) {
-       forceSort()
+        forceSort()
         gameViewport.apply()
         batch.use(gameViewport.camera.combined) {
             super.update(deltaTime)
@@ -46,7 +47,7 @@ class RenderSystem(private val batch: Batch, private val gameViewport: Viewport)
 
         if (graphics.sprite.texture == null) {
             LOG.error { "Looks like you forgot to pass Texture to your Sprite in Entity=$entity" }
-            return
+            throw GdxRuntimeException("Looks like you forgot to pass Texture to your Sprite in Entity=$entity")
         }
 
         graphics.sprite.run {

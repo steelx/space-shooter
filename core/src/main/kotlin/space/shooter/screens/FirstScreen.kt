@@ -13,7 +13,9 @@ import space.shooter.SpaceShooterGame
 import space.shooter.UNIT_SCALE
 import space.shooter.V_HEIGHT
 import space.shooter.V_WIDTH
+import space.shooter.ecs.components.FacingComponent
 import space.shooter.ecs.components.GraphicsComponent
+import space.shooter.ecs.components.PlayerComponent
 import space.shooter.ecs.components.TransformComponent
 
 private val LOG = logger<FirstScreen>()
@@ -32,6 +34,8 @@ class FirstScreen(game: SpaceShooterGame) : GameScreen(game) {
                 setOrigin(2f, 2f)
             }
         }
+        with<PlayerComponent>()
+        with<FacingComponent>()
     }
 
     override fun show() {

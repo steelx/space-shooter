@@ -10,6 +10,7 @@ import com.badlogic.gdx.utils.viewport.FitViewport
 import ktx.app.KtxGame
 import ktx.app.KtxScreen
 import ktx.log.logger
+import space.shooter.ecs.system.PlayerInputSystem
 import space.shooter.ecs.system.RenderSystem
 import space.shooter.screens.FirstScreen
 import space.shooter.screens.SecondScreen
@@ -28,7 +29,8 @@ class SpaceShooterGame : KtxGame<KtxScreen>() {
         // Tip: `apply` is passes all needed args to function without calling
         // `run` will actually run it right away
        PooledEngine().apply {
-            addSystem(RenderSystem(batch, viewport))
+           addSystem(PlayerInputSystem(viewport))
+           addSystem(RenderSystem(batch, viewport))
        }
     }
 
