@@ -22,18 +22,11 @@ private val LOG = logger<FirstScreen>()
 
 class FirstScreen(game: SpaceShooterGame) : GameScreen(game) {
 
-    private val playerTex = Texture(Gdx.files.internal("assets/player_ship/Player_ship_16.png"))
     private val player = engine.entity {
         with<TransformComponent> {
             position.set(10f, 1f, 0f)
         }
-        with<GraphicsComponent> {
-            sprite.run {
-                setRegion(playerTex)
-                setSize(playerTex.width* UNIT_SCALE, playerTex.height* UNIT_SCALE)
-                setOrigin(2f, 2f)
-            }
-        }
+        with<GraphicsComponent>()
         with<PlayerComponent>()
         with<FacingComponent>()
     }
