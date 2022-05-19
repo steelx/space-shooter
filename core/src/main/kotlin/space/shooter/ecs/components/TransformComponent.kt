@@ -10,7 +10,7 @@ import ktx.math.vec3
 class TransformComponent : Component, Poolable, Comparable<TransformComponent> {
     // Dont use Vector3.Zero for initialization, its a shared mutable instance
     val position = vec3()
-    val size = vec2()
+    val size = vec2(1f, 1f)// Scale factor
     var rotationDegree = 0f
 
     override fun reset() {
