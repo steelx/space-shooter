@@ -37,6 +37,16 @@ class FirstScreen(game: SpaceShooterGame) : GameScreen(game) {
                 setSpriteRegion(game.graphicsAtlas.findRegion("fighter"))
             }
         }
+
+        // Enemy
+        engine.entity {
+            with<TransformComponent> {
+                position.set(11f, 7f, 0f)
+            }
+            with<GraphicsComponent> {
+                setSpriteRegion(game.graphicsAtlas.findRegion("parafighter"))
+            }
+        }
     }
 
 

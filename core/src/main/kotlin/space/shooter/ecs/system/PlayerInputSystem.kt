@@ -17,7 +17,7 @@ private const val TOUCH_TOLERANCE_DISTANCE = 0.8f
 class PlayerInputSystem(private val gameViewport: Viewport) : IteratingSystem(
     allOf(PlayerComponent::class, FacingComponent::class, TransformComponent::class).get()
 ) {
-    private val tempVec2 = Vector2.Zero
+    private val tempVec2 = Vector2(0f, 0f)
 
     override fun processEntity(entity: Entity, deltaTime: Float) {
         val facing = entity[FacingComponent.mapper]
