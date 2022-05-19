@@ -1,0 +1,349 @@
+
+space-shooter.png
+size: 2048, 512
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+asteroid
+  rotate: false
+  xy: 1454, 209
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+barrier-midsection
+  rotate: false
+  xy: 1261, 32
+  size: 80, 25
+  orig: 80, 25
+  offset: 0, 0
+  index: -1
+barrier-node
+  rotate: false
+  xy: 1349, 83
+  size: 29, 29
+  orig: 29, 29
+  offset: 0, 0
+  index: -1
+boarder
+  rotate: false
+  xy: 1988, 482
+  size: 29, 29
+  orig: 29, 29
+  offset: 0, 0
+  index: -1
+boom01
+  rotate: false
+  xy: 1261, 261
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+boom02
+  rotate: false
+  xy: 757, 261
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+boom03
+  rotate: false
+  xy: 253, 261
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+boom04
+  rotate: false
+  xy: 1009, 261
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+boom05
+  rotate: false
+  xy: 505, 261
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+boom06
+  rotate: false
+  xy: 1, 261
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+boom07
+  rotate: false
+  xy: 757, 9
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+boom08
+  rotate: false
+  xy: 253, 9
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+boom09
+  rotate: false
+  xy: 1009, 9
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+boom10
+  rotate: false
+  xy: 505, 9
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+boom11
+  rotate: false
+  xy: 1, 9
+  size: 250, 250
+  orig: 250, 250
+  offset: 0, 0
+  index: -1
+cannon-barrel
+  rotate: false
+  xy: 1564, 287
+  size: 25, 9
+  orig: 25, 9
+  offset: 0, 0
+  index: -1
+cannon-body
+  rotate: false
+  xy: 1349, 114
+  size: 29, 29
+  orig: 29, 29
+  offset: 0, 0
+  index: -1
+core
+  rotate: false
+  xy: 1261, 145
+  size: 114, 114
+  orig: 114, 114
+  offset: 0, 0
+  index: -1
+core-bit
+  rotate: false
+  xy: 1590, 332
+  size: 34, 34
+  orig: 34, 34
+  offset: 0, 0
+  index: -1
+cruiser
+  rotate: false
+  xy: 1947, 472
+  size: 39, 39
+  orig: 39, 39
+  offset: 0, 0
+  index: -1
+crys0
+  rotate: false
+  xy: 2019, 495
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+crys1
+  rotate: false
+  xy: 1480, 195
+  size: 12, 12
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+fighter
+  rotate: false
+  xy: 1323, 1
+  size: 29, 29
+  orig: 29, 29
+  offset: 0, 0
+  index: -1
+flame0
+  rotate: false
+  xy: 1513, 332
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+flame1
+  rotate: false
+  xy: 1870, 436
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+flame2
+  rotate: false
+  xy: 1716, 436
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+flame3
+  rotate: false
+  xy: 1377, 184
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+flame4
+  rotate: false
+  xy: 1793, 436
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+flame5
+  rotate: false
+  xy: 1639, 436
+  size: 75, 75
+  orig: 75, 75
+  offset: 0, 0
+  index: -1
+flamer
+  rotate: false
+  xy: 1590, 368
+  size: 39, 39
+  orig: 39, 39
+  offset: 0, 0
+  index: -1
+kamikaze
+  rotate: false
+  xy: 1292, 1
+  size: 29, 29
+  orig: 29, 29
+  offset: 0, 0
+  index: -1
+mine0
+  rotate: false
+  xy: 1947, 441
+  size: 29, 29
+  orig: 29, 29
+  offset: 0, 0
+  index: -1
+mine1
+  rotate: false
+  xy: 1261, 1
+  size: 29, 29
+  orig: 29, 29
+  offset: 0, 0
+  index: -1
+mine2
+  rotate: false
+  xy: 1411, 153
+  size: 29, 29
+  orig: 29, 29
+  offset: 0, 0
+  index: -1
+mower0
+  rotate: false
+  xy: 1513, 281
+  size: 49, 49
+  orig: 49, 49
+  offset: 0, 0
+  index: -1
+parafighter
+  rotate: false
+  xy: 1377, 146
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+rocket
+  rotate: false
+  xy: 1349, 70
+  size: 16, 11
+  orig: 16, 11
+  offset: 0, 0
+  index: -1
+rocketship
+  rotate: false
+  xy: 1261, 59
+  size: 86, 84
+  orig: 86, 84
+  offset: 0, 0
+  index: -1
+shield
+  rotate: false
+  xy: 1564, 298
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+shieldship
+  rotate: false
+  xy: 1513, 409
+  size: 124, 102
+  orig: 124, 102
+  offset: 0, 0
+  index: -1
+ship0
+  rotate: false
+  xy: 1411, 95
+  size: 29, 27
+  orig: 29, 27
+  offset: 0, 0
+  index: -1
+ship1
+  rotate: false
+  xy: 1411, 124
+  size: 29, 27
+  orig: 29, 27
+  offset: 0, 0
+  index: -1
+ship2
+  rotate: false
+  xy: 1380, 117
+  size: 29, 27
+  orig: 29, 27
+  offset: 0, 0
+  index: -1
+ship3
+  rotate: false
+  xy: 1380, 88
+  size: 29, 27
+  orig: 29, 27
+  offset: 0, 0
+  index: -1
+ship4
+  rotate: false
+  xy: 1639, 411
+  size: 25, 23
+  orig: 25, 23
+  offset: 0, 0
+  index: -1
+shotbig
+  rotate: false
+  xy: 1454, 192
+  size: 24, 15
+  orig: 24, 15
+  offset: 0, 0
+  index: -1
+shotoval
+  rotate: false
+  xy: 1513, 262
+  size: 17, 17
+  orig: 17, 17
+  offset: 0, 0
+  index: -1
+shotsmall
+  rotate: false
+  xy: 1666, 424
+  size: 15, 10
+  orig: 15, 10
+  offset: 0, 0
+  index: -1
+shotwave
+  rotate: false
+  xy: 1598, 305
+  size: 22, 25
+  orig: 22, 25
+  offset: 0, 0
+  index: -1

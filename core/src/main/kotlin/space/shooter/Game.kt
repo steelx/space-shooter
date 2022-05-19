@@ -4,10 +4,9 @@ import com.badlogic.ashley.core.Engine
 import com.badlogic.ashley.core.PooledEngine
 import com.badlogic.gdx.Application.LOG_DEBUG
 import com.badlogic.gdx.Gdx
-import com.badlogic.gdx.graphics.Texture
 import com.badlogic.gdx.graphics.g2d.Batch
 import com.badlogic.gdx.graphics.g2d.SpriteBatch
-import com.badlogic.gdx.graphics.g2d.TextureRegion
+import com.badlogic.gdx.graphics.g2d.TextureAtlas
 import com.badlogic.gdx.utils.viewport.FitViewport
 import ktx.app.KtxGame
 import ktx.app.KtxScreen
@@ -25,10 +24,7 @@ const val UNIT_SCALE = 1 / 16f
 
 class SpaceShooterGame : KtxGame<KtxScreen>() {
 
-    private val playerDefault by lazy { TextureRegion(Texture(Gdx.files.internal("assets/player/ship2.png"))) }
-    private val playerLeft by lazy { TextureRegion(Texture(Gdx.files.internal("assets/player/ship1.png"))) }
-    private val playerRight by lazy { TextureRegion(Texture(Gdx.files.internal("assets/player/ship3.png"))) }
-
+    private val graphicsAtlas by lazy { TextureAtlas(Gdx.files.internal("assets/atlas/space-shooter.atlas")) }
 
     // `by lazy` initialize Batch only when it's called
     // smart way to avoid calling it inside create
@@ -39,7 +35,13 @@ class SpaceShooterGame : KtxGame<KtxScreen>() {
         // `run` will actually run it right away
        PooledEngine().apply {
            addSystem(PlayerInputSystem(viewport))
-           addSystem(PlayerAnimationSystem(playerDefault, playerLeft, playerRight))
+           addSystem(
+               PlayerAnimationSystem(
+                   graphicsAtlas.findRegion("ship2"),
+                   graphicsAtlas.findRegion("ship1"),
+                   graphicsAtlas.findRegion("ship3")
+               )
+           )
            addSystem(RenderSystem(batch, viewport))
        }
     }
@@ -55,8 +57,7 @@ class SpaceShooterGame : KtxGame<KtxScreen>() {
     }
 
     override fun dispose() {
-        playerDefault.texture.dispose()
-        playerLeft.texture.dispose()
-        playerRight.texture.dispose()
+        batch.dispose()
+        graphicsAtlas.dispose()
     }
 }
