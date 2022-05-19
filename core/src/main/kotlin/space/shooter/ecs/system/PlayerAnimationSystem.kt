@@ -8,10 +8,7 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion
 import ktx.ashley.allOf
 import ktx.ashley.get
 import ktx.log.logger
-import space.shooter.ecs.components.FacingComponent
-import space.shooter.ecs.components.FacingDirection
-import space.shooter.ecs.components.GraphicsComponent
-import space.shooter.ecs.components.PlayerComponent
+import space.shooter.ecs.components.*
 
 private val LOG = logger<PlayerAnimationSystem>()
 
@@ -20,7 +17,7 @@ class PlayerAnimationSystem(
     private val leftRegion: TextureRegion,
     private val rightRegion: TextureRegion
 ) : IteratingSystem(
-    allOf(PlayerComponent::class, GraphicsComponent::class, FacingComponent::class).get()
+    allOf(PlayerComponent::class, GraphicsComponent::class, FacingComponent::class, TransformComponent::class).get()
 ), EntityListener {
 
     private var lastDirection = FacingDirection.DEFAULT

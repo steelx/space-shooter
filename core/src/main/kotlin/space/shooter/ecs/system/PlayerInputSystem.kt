@@ -12,7 +12,7 @@ import space.shooter.ecs.components.FacingDirection
 import space.shooter.ecs.components.PlayerComponent
 import space.shooter.ecs.components.TransformComponent
 
-private val TOUCH_TOLERANCE_DISTANCE = 0.8f
+private const val TOUCH_TOLERANCE_DISTANCE = 0.8f
 
 class PlayerInputSystem(private val gameViewport: Viewport) : IteratingSystem(
     allOf(PlayerComponent::class, FacingComponent::class, TransformComponent::class).get()

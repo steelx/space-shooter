@@ -24,7 +24,7 @@ const val UNIT_SCALE = 1 / 16f
 
 class SpaceShooterGame : KtxGame<KtxScreen>() {
 
-    private val graphicsAtlas by lazy { TextureAtlas(Gdx.files.internal("assets/atlas/space-shooter.atlas")) }
+    val graphicsAtlas by lazy { TextureAtlas(Gdx.files.internal("assets/atlas/space-shooter.atlas")) }
 
     // `by lazy` initialize Batch only when it's called
     // smart way to avoid calling it inside create
