@@ -53,4 +53,10 @@ class SpaceShooterGame : KtxGame<KtxScreen>() {
         addScreen(SecondScreen(this))
         setScreen<FirstScreen>()
     }
+
+    override fun dispose() {
+        playerDefault.texture.dispose()
+        playerLeft.texture.dispose()
+        playerRight.texture.dispose()
+    }
 }
