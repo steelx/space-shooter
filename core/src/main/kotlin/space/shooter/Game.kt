@@ -13,6 +13,7 @@ import ktx.app.KtxScreen
 import ktx.log.logger
 import space.shooter.ecs.system.PlayerAnimationSystem
 import space.shooter.ecs.system.PlayerInputSystem
+import space.shooter.ecs.system.RemoveSystem
 import space.shooter.ecs.system.RenderSystem
 import space.shooter.screens.FirstScreen
 import space.shooter.screens.SecondScreen
@@ -43,6 +44,7 @@ class SpaceShooterGame : KtxGame<KtxScreen>() {
                )
            )
            addSystem(RenderSystem(batch, viewport))
+           addSystem(RemoveSystem())
        }
     }
 
