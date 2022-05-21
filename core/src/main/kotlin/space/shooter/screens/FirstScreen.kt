@@ -6,10 +6,7 @@ import ktx.ashley.entity
 import ktx.ashley.with
 import ktx.log.logger
 import space.shooter.SpaceShooterGame
-import space.shooter.ecs.components.FacingComponent
-import space.shooter.ecs.components.GraphicsComponent
-import space.shooter.ecs.components.PlayerComponent
-import space.shooter.ecs.components.TransformComponent
+import space.shooter.ecs.components.*
 
 private val LOG = logger<FirstScreen>()
 
@@ -21,11 +18,12 @@ class FirstScreen(game: SpaceShooterGame) : GameScreen(game) {
         // Player
         engine.entity {
             with<TransformComponent> {
-                position.set(10f, 1f, 0f)
+                position.set(10f, 10f, 0f)
             }
             with<GraphicsComponent>()
             with<PlayerComponent>()
             with<FacingComponent>()
+            with<MoveComponent>()
         }
 
         // Enemy

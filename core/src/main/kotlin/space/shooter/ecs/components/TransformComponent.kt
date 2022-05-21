@@ -19,6 +19,7 @@ class TransformComponent : Component, Poolable, Comparable<TransformComponent> {
         size.set(1f, 1f)
     }
 
+    /// compareTo - sorts 2 entities so the front one renders correctly
     override fun compareTo(other: TransformComponent): Int {
         val zDiff = other.position.z.compareTo(position.z)
         return if (zDiff == 0) other.position.y.compareTo(position.y) else zDiff
