@@ -49,9 +49,6 @@ class FirstScreen(game: SpaceShooterGame) : GameScreen(game) {
 
 
     override fun render(delta: Float) {
-        if (Gdx.input.isKeyJustPressed(Input.Keys.NUM_2)) {
-            game.setScreen<SecondScreen>()
-        }
         engine.update(delta)
     }
 

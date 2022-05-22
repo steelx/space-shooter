@@ -44,6 +44,7 @@ class SpaceShooterGame : KtxGame<KtxScreen>() {
            )
            addSystem(RenderSystem(batch, viewport))
            addSystem(RemoveSystem())
+           addSystem(DebugSystem())
        }
     }
 
