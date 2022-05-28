@@ -10,12 +10,14 @@ import ktx.math.vec3
 class TransformComponent : Component, Poolable, Comparable<TransformComponent> {
     // Dont use Vector3.Zero for initialization, its a shared mutable instance
     val position = vec3()
+    val prevPosition = vec3()
+    val interpolatedPosition = vec3()//diff btw position and prevPosition
     val size = vec2(1f, 1f)// Scale factor
     var rotationDegree = 0f
 
     override fun reset() {
         rotationDegree = 0f
-        position.set(Vector3.Zero)
+        setInitPosition(0f, 0f, 0f)
         size.set(1f, 1f)
     }
 
@@ -27,5 +29,11 @@ class TransformComponent : Component, Poolable, Comparable<TransformComponent> {
 
     companion object {
         val mapper = mapperFor<TransformComponent>()
+    }
+
+    fun setInitPosition(x: Float, y: Float, z: Float) {
+        position.set(x, y, z)
+        prevPosition.set(x, y, z)
+        interpolatedPosition.set(x, y, z)
     }
 }

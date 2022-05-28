@@ -31,7 +31,25 @@ class MoveSystem :
         accumulator += deltaTime
         while (accumulator >= FPS) {
             accumulator -= FPS
+
+            entities.forEach {
+                it[TransformComponent.mapper]?.let {transform ->
+                    transform.prevPosition.set(transform.position)
+                }
+            }
+
             super.update(FPS)
+        }
+
+        val alpha = accumulator / FPS // value btw 0..0.99.1
+        entities.forEach { entity ->
+            entity[TransformComponent.mapper]?.let { transform ->
+                transform.interpolatedPosition.set(
+                    MathUtils.lerp(transform.prevPosition.x, transform.position.x, alpha),
+                    MathUtils.lerp(transform.prevPosition.y, transform.position.y, alpha),
+                    transform.position.z
+                )
+            }
         }
     }
 

@@ -1,14 +1,14 @@
 package space.shooter.screens
 
-import com.badlogic.gdx.Gdx
-import com.badlogic.gdx.Input
 import ktx.ashley.entity
 import ktx.ashley.with
 import ktx.log.logger
 import space.shooter.SpaceShooterGame
 import space.shooter.ecs.components.*
+import kotlin.math.min
 
 private val LOG = logger<FirstScreen>()
+private const val MAX_DELTA_TIME = 1 / 25f // 25 FPS
 
 class FirstScreen(game: SpaceShooterGame) : GameScreen(game) {
 
@@ -18,7 +18,7 @@ class FirstScreen(game: SpaceShooterGame) : GameScreen(game) {
         // Player
         engine.entity {
             with<TransformComponent> {
-                position.set(10f, 10f, 0f)
+                setInitPosition(10f, 10f, 0f)
             }
             with<GraphicsComponent>()
             with<PlayerComponent>()
@@ -29,7 +29,7 @@ class FirstScreen(game: SpaceShooterGame) : GameScreen(game) {
         // Enemy
         engine.entity {
             with<TransformComponent> {
-                position.set(4f, 12f, 0f)
+                setInitPosition(4f, 12f, 0f)
             }
             with<GraphicsComponent> {
                 setSpriteRegion(game.graphicsAtlas.findRegion("fighter"))
@@ -39,7 +39,7 @@ class FirstScreen(game: SpaceShooterGame) : GameScreen(game) {
         // Enemy
         engine.entity {
             with<TransformComponent> {
-                position.set(11f, 7f, 0f)
+                setInitPosition(11f, 7f, 0f)
             }
             with<GraphicsComponent> {
                 setSpriteRegion(game.graphicsAtlas.findRegion("parafighter"))
@@ -48,8 +48,8 @@ class FirstScreen(game: SpaceShooterGame) : GameScreen(game) {
     }
 
 
-    override fun render(delta: Float) {
-        engine.update(delta)
+    override fun render(deltaTime: Float) {
+        engine.update(min(MAX_DELTA_TIME, deltaTime))
     }
 
     override fun dispose() {
