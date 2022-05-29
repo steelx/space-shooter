@@ -35,6 +35,7 @@ class SpaceShooterGame : KtxGame<KtxScreen>() {
            addSystem(PlayerInputSystem(viewport))
            addSystem(MoveSystem())
            addSystem(DamageSystem())
+           addSystem(AnimationSystem(graphicsAtlas))
            addSystem(
                PlayerAnimationSystem(
                    graphicsAtlas.findRegion("ship2"),

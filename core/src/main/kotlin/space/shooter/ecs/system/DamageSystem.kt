@@ -11,7 +11,7 @@ import space.shooter.ecs.components.RemoveComponent
 import space.shooter.ecs.components.TransformComponent
 import kotlin.math.max
 
-private const val DAMAGE_AREA_HEIGHT = 2f
+const val DAMAGE_AREA_HEIGHT = 1f
 private const val DAMAGE_PER_SECONDS = 25f
 private const val DEATH_EXPLOSION_DURATION = 0.9f
 

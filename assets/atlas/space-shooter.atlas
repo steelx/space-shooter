@@ -6,7 +6,7 @@ filter: Nearest, Nearest
 repeat: none
 asteroid
   rotate: false
-  xy: 1454, 209
+  xy: 1773, 253
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
@@ -20,14 +20,14 @@ barrier-midsection
   index: -1
 barrier-node
   rotate: false
-  xy: 1349, 83
+  xy: 1804, 118
   size: 29, 29
   orig: 29, 29
   offset: 0, 0
   index: -1
 boarder
   rotate: false
-  xy: 1988, 482
+  xy: 1711, 118
   size: 29, 29
   orig: 29, 29
   offset: 0, 0
@@ -111,14 +111,14 @@ boom11
   index: -1
 cannon-barrel
   rotate: false
-  xy: 1564, 287
+  xy: 1349, 69
   size: 25, 9
   orig: 25, 9
   offset: 0, 0
   index: -1
 cannon-body
   rotate: false
-  xy: 1349, 114
+  xy: 1773, 118
   size: 29, 29
   orig: 29, 29
   offset: 0, 0
@@ -132,30 +132,457 @@ core
   index: -1
 core-bit
   rotate: false
-  xy: 1590, 332
+  xy: 1610, 113
   size: 34, 34
   orig: 34, 34
   offset: 0, 0
   index: -1
 cruiser
   rotate: false
-  xy: 1947, 472
+  xy: 1999, 431
   size: 39, 39
   orig: 39, 39
   offset: 0, 0
   index: -1
 crys0
   rotate: false
-  xy: 2019, 495
+  xy: 1429, 166
   size: 16, 16
   orig: 16, 16
   offset: 0, 0
   index: -1
 crys1
   rotate: false
-  xy: 1480, 195
+  xy: 1959, 135
   size: 12, 12
   orig: 12, 12
+  offset: 0, 0
+  index: -1
+dark_matter
+  rotate: false
+  xy: 1454, 209
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 21
+dark_matter
+  rotate: false
+  xy: 1513, 280
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 8
+dark_matter
+  rotate: false
+  xy: 1947, 461
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 34
+dark_matter
+  rotate: false
+  xy: 1590, 357
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 47
+dark_matter
+  rotate: false
+  xy: 1377, 132
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 0
+dark_matter
+  rotate: false
+  xy: 1454, 157
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 13
+dark_matter
+  rotate: false
+  xy: 1565, 280
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 26
+dark_matter
+  rotate: false
+  xy: 1947, 409
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 52
+dark_matter
+  rotate: false
+  xy: 1617, 305
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 39
+dark_matter
+  rotate: false
+  xy: 1642, 357
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 5
+dark_matter
+  rotate: false
+  xy: 1617, 253
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 31
+dark_matter
+  rotate: false
+  xy: 1669, 305
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 18
+dark_matter
+  rotate: false
+  xy: 1669, 253
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 44
+dark_matter
+  rotate: false
+  xy: 1694, 357
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 57
+dark_matter
+  rotate: false
+  xy: 1721, 305
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 10
+dark_matter
+  rotate: false
+  xy: 1721, 253
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 23
+dark_matter
+  rotate: false
+  xy: 1746, 357
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 36
+dark_matter
+  rotate: false
+  xy: 1773, 305
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 49
+dark_matter
+  rotate: false
+  xy: 1798, 357
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 2
+dark_matter
+  rotate: false
+  xy: 1825, 305
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 15
+dark_matter
+  rotate: false
+  xy: 1825, 253
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 41
+dark_matter
+  rotate: false
+  xy: 1850, 357
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 28
+dark_matter
+  rotate: false
+  xy: 1877, 305
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 54
+dark_matter
+  rotate: false
+  xy: 1877, 253
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 20
+dark_matter
+  rotate: false
+  xy: 1902, 357
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 7
+dark_matter
+  rotate: false
+  xy: 1954, 357
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 33
+dark_matter
+  rotate: false
+  xy: 1929, 305
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 46
+dark_matter
+  rotate: false
+  xy: 1929, 253
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 59
+dark_matter
+  rotate: false
+  xy: 1981, 305
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 12
+dark_matter
+  rotate: false
+  xy: 1981, 253
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 25
+dark_matter
+  rotate: false
+  xy: 1349, 80
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 51
+dark_matter
+  rotate: false
+  xy: 1401, 80
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 38
+dark_matter
+  rotate: false
+  xy: 1453, 105
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 4
+dark_matter
+  rotate: false
+  xy: 1453, 53
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 30
+dark_matter
+  rotate: false
+  xy: 1354, 1
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 17
+dark_matter
+  rotate: false
+  xy: 1406, 1
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 43
+dark_matter
+  rotate: false
+  xy: 1458, 1
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 56
+dark_matter
+  rotate: false
+  xy: 1513, 228
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 22
+dark_matter
+  rotate: false
+  xy: 1565, 228
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 9
+dark_matter
+  rotate: false
+  xy: 1506, 176
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 35
+dark_matter
+  rotate: false
+  xy: 1558, 176
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 48
+dark_matter
+  rotate: false
+  xy: 1617, 201
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 1
+dark_matter
+  rotate: false
+  xy: 1669, 201
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 14
+dark_matter
+  rotate: false
+  xy: 1721, 201
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 40
+dark_matter
+  rotate: false
+  xy: 1773, 201
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 27
+dark_matter
+  rotate: false
+  xy: 1825, 201
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 53
+dark_matter
+  rotate: false
+  xy: 1877, 201
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 6
+dark_matter
+  rotate: false
+  xy: 1929, 201
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 32
+dark_matter
+  rotate: false
+  xy: 1981, 201
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 19
+dark_matter
+  rotate: false
+  xy: 1506, 124
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 45
+dark_matter
+  rotate: false
+  xy: 1558, 124
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 58
+dark_matter
+  rotate: false
+  xy: 1505, 72
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 11
+dark_matter
+  rotate: false
+  xy: 1557, 72
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 24
+dark_matter
+  rotate: false
+  xy: 1610, 149
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 50
+dark_matter
+  rotate: false
+  xy: 1662, 149
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 37
+dark_matter
+  rotate: false
+  xy: 1714, 149
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 3
+dark_matter
+  rotate: false
+  xy: 1766, 149
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 16
+dark_matter
+  rotate: false
+  xy: 1818, 149
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 42
+dark_matter
+  rotate: false
+  xy: 1870, 149
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 29
+dark_matter
+  rotate: false
+  xy: 1922, 149
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 55
+error
+  rotate: false
+  xy: 1663, 416
+  size: 13, 18
+  orig: 13, 18
   offset: 0, 0
   index: -1
 fighter
@@ -209,7 +636,7 @@ flame5
   index: -1
 flamer
   rotate: false
-  xy: 1590, 368
+  xy: 1999, 472
   size: 39, 39
   orig: 39, 39
   offset: 0, 0
@@ -223,7 +650,7 @@ kamikaze
   index: -1
 mine0
   rotate: false
-  xy: 1947, 441
+  xy: 1680, 118
   size: 29, 29
   orig: 29, 29
   offset: 0, 0
@@ -237,28 +664,28 @@ mine1
   index: -1
 mine2
   rotate: false
-  xy: 1411, 153
+  xy: 1742, 118
   size: 29, 29
   orig: 29, 29
   offset: 0, 0
   index: -1
 mower0
   rotate: false
-  xy: 1513, 281
+  xy: 1974, 150
   size: 49, 49
   orig: 49, 49
   offset: 0, 0
   index: -1
 parafighter
   rotate: false
-  xy: 1377, 146
+  xy: 1609, 75
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 rocket
   rotate: false
-  xy: 1349, 70
+  xy: 1349, 132
   size: 16, 11
   orig: 16, 11
   offset: 0, 0
@@ -272,7 +699,7 @@ rocketship
   index: -1
 shield
   rotate: false
-  xy: 1564, 298
+  xy: 1646, 115
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
@@ -286,63 +713,63 @@ shieldship
   index: -1
 ship0
   rotate: false
-  xy: 1411, 95
+  xy: 1928, 120
   size: 29, 27
   orig: 29, 27
   offset: 0, 0
   index: -1
 ship1
   rotate: false
-  xy: 1411, 124
+  xy: 1866, 120
   size: 29, 27
   orig: 29, 27
   offset: 0, 0
   index: -1
 ship2
   rotate: false
-  xy: 1380, 117
+  xy: 1835, 120
   size: 29, 27
   orig: 29, 27
   offset: 0, 0
   index: -1
 ship3
   rotate: false
-  xy: 1380, 88
+  xy: 1897, 120
   size: 29, 27
   orig: 29, 27
   offset: 0, 0
   index: -1
 ship4
   rotate: false
-  xy: 1639, 411
+  xy: 1590, 332
   size: 25, 23
   orig: 25, 23
   offset: 0, 0
   index: -1
 shotbig
   rotate: false
-  xy: 1454, 192
+  xy: 1999, 414
   size: 24, 15
   orig: 24, 15
   offset: 0, 0
   index: -1
 shotoval
   rotate: false
-  xy: 1513, 262
+  xy: 1505, 53
   size: 17, 17
   orig: 17, 17
   offset: 0, 0
   index: -1
 shotsmall
   rotate: false
-  xy: 1666, 424
+  xy: 1524, 60
   size: 15, 10
   orig: 15, 10
   offset: 0, 0
   index: -1
 shotwave
   rotate: false
-  xy: 1598, 305
+  xy: 1639, 409
   size: 22, 25
   orig: 22, 25
   offset: 0, 0

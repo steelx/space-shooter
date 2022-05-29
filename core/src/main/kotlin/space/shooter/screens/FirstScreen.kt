@@ -4,7 +4,9 @@ import ktx.ashley.entity
 import ktx.ashley.with
 import ktx.log.logger
 import space.shooter.SpaceShooterGame
+import space.shooter.V_WIDTH
 import space.shooter.ecs.components.*
+import space.shooter.ecs.system.DAMAGE_AREA_HEIGHT
 import kotlin.math.min
 
 private val LOG = logger<FirstScreen>()
@@ -43,6 +45,18 @@ class FirstScreen(game: SpaceShooterGame) : GameScreen(game) {
             }
             with<GraphicsComponent> {
                 setSpriteRegion(game.graphicsAtlas.findRegion("parafighter"))
+            }
+        }
+
+        // Bottom Dark matter
+        engine.entity {
+            with<TransformComponent> {
+                size.set(V_WIDTH.toFloat(), DAMAGE_AREA_HEIGHT)
+                setInitPosition(0f, 0f, 0f)
+            }
+            with<GraphicsComponent>()
+            with<AnimationComponent> {
+                type = AnimationType.DARK_MATTER
             }
         }
     }
