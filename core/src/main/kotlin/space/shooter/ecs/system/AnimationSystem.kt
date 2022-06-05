@@ -65,31 +65,29 @@ class AnimationSystem(private val atlas: TextureAtlas) :
 
     override fun processEntity(entity: Entity, deltaTime: Float) {
         // update Animation frame
-        val anim = entity[AnimationComponent.mapper]
-        require(anim != null) { "Entity |entity| must have a AnimationComponent. entity=$entity" }
+        val animationComponent = entity[AnimationComponent.mapper]
+        require(animationComponent != null) { "Entity |entity| must have a AnimationComponent. entity=$entity" }
         val graphic = entity[GraphicsComponent.mapper]
         require(graphic != null) { "Entity |entity| must have a GraphicComponent. entity=$entity" }
 
-        if (anim.type == AnimationType.NONE) {
+        if (animationComponent.type == AnimationType.NONE) {
             LOG.error {
-                "No AnimationType specified for type $anim for |entity| $entity"
+                "No AnimationType specified for type $animationComponent for |entity| $entity"
             }
             return
         }
 
-        if (anim.type == anim.animation.type) {
+        if (animationComponent.type == animationComponent.animation.type) {
             // still in current animation, update it
-            anim.stateTime += deltaTime
+            animationComponent.stateTime += deltaTime
         } else {
             // change to new animation
-            anim.stateTime = 0f
-            anim.animation = getAnimation(anim.type)
+            animationComponent.stateTime = 0f
+            animationComponent.animation = getAnimation(animationComponent.type)
         }
 
-        val frame = anim.animation.getKeyFrame(anim.stateTime)
+        val frame = animationComponent.animation.getKeyFrame(animationComponent.stateTime)
         graphic.setSpriteRegion(frame)
     }
-
-
 
 }

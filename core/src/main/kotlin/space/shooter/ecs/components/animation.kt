@@ -15,14 +15,14 @@ enum class AnimationType(
     val atlasKey: String, val playMode: Animation.PlayMode = Animation.PlayMode.LOOP, val speedRate: Float = 1f
 ) {
     NONE(""),
-    DARK_MATTER("dark_matter")
+    DARK_MATTER("dark_matter", speedRate = 3f)
 }
 
 class Animation2D(
     val type: AnimationType,
     keyFrames: com.badlogic.gdx.utils.Array<out TextureRegion>,
-    playMode: PlayMode = PlayMode.LOOP,
-    speedRate: Float = 1f
+    playMode: PlayMode,
+    speedRate: Float
 ) : Animation<TextureRegion>(DEFAULT_FRAME_DURATION / speedRate, keyFrames, playMode)
 
 class AnimationComponent : Component, Poolable {
