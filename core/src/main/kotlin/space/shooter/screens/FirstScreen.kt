@@ -4,6 +4,7 @@ import ktx.ashley.entity
 import ktx.ashley.with
 import ktx.log.logger
 import space.shooter.SpaceShooterGame
+import space.shooter.UNIT_SCALE
 import space.shooter.V_WIDTH
 import space.shooter.ecs.components.*
 import space.shooter.ecs.system.DAMAGE_AREA_HEIGHT
@@ -18,14 +19,26 @@ class FirstScreen(game: SpaceShooterGame) : GameScreen(game) {
         LOG.debug { "First Screen shown" }
 
         // Player
-        engine.entity {
+        val playerShip = engine.entity {
             with<TransformComponent> {
-                setInitPosition(10f, 10f, 0f)
+                setInitPosition(10f, 10f, -1f)// -1 so that ship zIndex comes above ship fire
             }
             with<GraphicsComponent>()
             with<PlayerComponent>()
             with<FacingComponent>()
             with<MoveComponent>()
+        }
+        // Player Ship Fire
+        engine.entity {
+            with<AttachComponent> {
+                entity = playerShip
+                offset.set(0f, -8 * UNIT_SCALE)
+            }
+            with<TransformComponent>()
+            with<GraphicsComponent>()
+            with<AnimationComponent> {
+                type = AnimationType.SHIP_FIRE
+            }
         }
 
         // Enemy
