@@ -5,6 +5,7 @@ import com.badlogic.gdx.graphics.g2d.Animation
 import com.badlogic.gdx.graphics.g2d.TextureRegion
 import com.badlogic.gdx.utils.Pool.Poolable
 import ktx.ashley.mapperFor
+import ktx.collections.GdxArray
 
 private const val DEFAULT_FRAME_DURATION = 1 / 20f
 
@@ -16,12 +17,16 @@ enum class AnimationType(
 ) {
     NONE(""),
     DARK_MATTER("dark_matter", speedRate = 3f),
-    SHIP_FIRE("fire")
+    SHIP_FIRE("fire"),
+    SHIELD("shield"),
+    LIFE("life"),
+    SPEED_1("flame"),
+    SPEED_2("crys")
 }
 
 class Animation2D(
     val type: AnimationType,
-    keyFrames: com.badlogic.gdx.utils.Array<out TextureRegion>,
+    keyFrames: GdxArray<out TextureRegion>,
     playMode: PlayMode,
     speedRate: Float
 ) : Animation<TextureRegion>(DEFAULT_FRAME_DURATION / speedRate, keyFrames, playMode)

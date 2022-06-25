@@ -34,6 +34,7 @@ class SpaceShooterGame : KtxGame<KtxScreen>() {
        PooledEngine().apply {
            addSystem(PlayerInputSystem(viewport))
            addSystem(MoveSystem())
+           addSystem(PowerUpSystem())
            addSystem(DamageSystem())
            addSystem(
                PlayerAnimationSystem(
